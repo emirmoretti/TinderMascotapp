@@ -1,0 +1,38 @@
+@startuml
+annotation javax.persistence.Entity
+annotation javax.persistence.Enumerated
+annotation javax.persistence.Id
+annotation javax.persistence.ManyToOne
+annotation javax.persistence.Temporal
+class edu.egg.tinder.entidades.Mascota
+class edu.egg.tinder.entidades.Usuario
+class edu.egg.tinder.entidades.Voto
+class edu.egg.tinder.entidades.Zona
+class edu.egg.tinder.enumeraciones.Sexo
+class java.util.Date
+class javax.persistence.EnumType
+class javax.persistence.TemporalType
+edu.egg.tinder.entidades.Mascota ..> javax.persistence.Entity
+edu.egg.tinder.entidades.Mascota ..> javax.persistence.Enumerated
+edu.egg.tinder.entidades.Mascota ..> javax.persistence.Id
+edu.egg.tinder.entidades.Mascota ..> javax.persistence.ManyToOne
+edu.egg.tinder.entidades.Mascota ..> javax.persistence.Temporal
+edu.egg.tinder.entidades.Mascota ..> edu.egg.tinder.enumeraciones.Sexo
+edu.egg.tinder.entidades.Mascota ..> java.util.Date
+edu.egg.tinder.entidades.Mascota ..> javax.persistence.EnumType
+edu.egg.tinder.entidades.Mascota ..> javax.persistence.TemporalType
+edu.egg.tinder.entidades.Usuario ..> javax.persistence.Entity
+edu.egg.tinder.entidades.Usuario ..> javax.persistence.Id
+edu.egg.tinder.entidades.Usuario ..> javax.persistence.ManyToOne
+edu.egg.tinder.entidades.Usuario ..> javax.persistence.Temporal
+edu.egg.tinder.entidades.Usuario ..> java.util.Date
+edu.egg.tinder.entidades.Usuario ..> javax.persistence.TemporalType
+edu.egg.tinder.entidades.Voto ..> javax.persistence.Entity
+edu.egg.tinder.entidades.Voto ..> javax.persistence.Id
+edu.egg.tinder.entidades.Voto ..> javax.persistence.ManyToOne
+edu.egg.tinder.entidades.Voto ..> javax.persistence.Temporal
+edu.egg.tinder.entidades.Voto ..> java.util.Date
+edu.egg.tinder.entidades.Voto ..> javax.persistence.TemporalType
+edu.egg.tinder.entidades.Zona ..> javax.persistence.Entity
+edu.egg.tinder.entidades.Zona ..> javax.persistence.Id
+@enduml
